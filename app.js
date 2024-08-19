@@ -193,11 +193,4 @@ function mensajeExitoCopiar(){
   });
 }
 
-// CAMBIAR A MODO OSCURO
-const darkMode = document.querySelector(".switch");
-darkMode.addEventListener("click", e => {
-    darkMode.classList.toggle("active");
-    document.body.classList.toggle("active");
-})
-
 condicionesIniciales();

@@ -18,37 +18,43 @@
 
         <main class="main">
             <div class="container"> <!-- PARTE IZQUIERDA PARA ENCRIPTAR -->              
-                <!-- area para el ingreso del texto a encriptar -->                  
-                <div class="textBox__area">
-                    <div class="textBox__Label">
-                        <h2 class="textBox__Label__Text"> Ingrese el texto... </h2>
-                        <img src="assets/IconArrowDown.png" alt="Icono flecha abajo" class="Icono__ArrowDown">
+                              
+                <div class="textBox__area"> <!-- area para el ingreso del texto a encriptar -->      
+                    <div class="textBox__label">
+                        <h2 class="textBox__label__text">INGRESE EL TEXTO...</h2>
+                        <div class="textBox__label__icon">
+                            <img src="assets/IconArrowDown.png" alt="Icono flecha abajo" class="icon__arrowDown">
+                        </div>
                     </div>
-                    <textarea class="textBox" id="mensajeDesencriptado" name="mensaje" rows="10" cols="30" placeholder="Ingrese el texto aquí"> </textarea>            
+                    <textarea class="textBox" id="mensajeDesencriptado" name="mensaje" rows="10" cols="30" placeholder="...A ENCRIPTAR"> </textarea>            
                 </div>
-                <!-- mensaje de avdertencia -->
-                <div class="advertencia__area">
+                
+                
+                <div class="advertencia__area"> <!-- mensaje de avdertencia -->
                     <img src="assets/Icon_Alert.png" alt="Icono de advertencia" class="advertencia__icono">
                     <p class="advertencia__texto">Solo letras minúsculas y sin acentos</p>
                  </div>
              
-                <!-- area de botones -->
-                <div class="buttons__area">
+                
+                <div class="buttons__area"> <!-- area de botones -->
                     <button class="buttons__encriptar" type="button" onclick="encriptar()" id="encriptar">Encriptar</button>
                     <button class="buttons__copiar__encriptado" type="button"  onclick="copiarTextoDesencriptado()" id="copiar">Copiar</button>  
                 </div>
             </div>
-
-            <button class="swapImg" type="button" onclick="swap()" id="swap"><img src="assets/Swap.png" alt="Imagen de intercambio entre campos de texto"></button>
-
+            
+            <div class="button__swap__area">
+                <button class="button__swap" type="button" onclick="swap()" id="swap"><img src="assets/Swap.png" class="swap__img" alt="Imagen de intercambio entre campos de texto"></button>
+            </div>
+            
             <div class="container"> <!-- PARTE DERECHA CON RESULTADO -->
-                <!-- area para el ingreso del texto a desencriptar -->                  
-                <div class="textBox__area">
-                    <div class="textBox__Label">
-                        <h2 class="textBox__Label__Text"> Ingrese el texto... </h2>
-                        <img src="assets/IconArrowDown.png" alt="Icono flecha abajo" class="Icono__ArrowDown">
+                <div class="textBox__area"> <!-- area para el ingreso del texto a encriptar -->      
+                    <div class="textBox__label">
+                        <h2 class="textBox__label__text">INGRESE EL TEXTO...</h2>
+                        <div class="textBox__label__icon">
+                            <img src="assets/IconArrowDown.png" alt="Icono flecha abajo" class="icon__arrowDown">
+                        </div>
                     </div>
-                <textarea class="textBox" id="mensajeEncriptado" name="resultado" rows="10" cols="30" placeholder="...a desencriptar"> </textarea>
+                    <textarea class="textBox" id="mensajeEncriptado" name="resultado" rows="10" cols="30" placeholder="...A DESENCRIPTAR"> </textarea>
                 </div>
 
                 <!-- mensaje de avdertencia -->
