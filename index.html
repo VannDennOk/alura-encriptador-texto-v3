@@ -12,12 +12,11 @@
 
     <body>      
         <header class="header">
-            <!-- titulo -->
             <h1 class="headline">ENCRIPTADOR DE TEXTO</h1>     
         </header>  
 
         <main class="main">
-            <div class="container"> <!-- PARTE IZQUIERDA PARA ENCRIPTAR -->              
+            <section class="container"> <!-- PARTE IZQUIERDA PARA ENCRIPTAR -->              
                               
                 <div class="textBox__area"> <!-- area para el ingreso del texto a encriptar -->      
                     <div class="textBox__label">
@@ -25,50 +24,50 @@
                         <div class="textBox__label__icon">
                             <img src="assets/IconArrowDown.png" alt="Icono flecha abajo" class="icon__arrowDown">
                         </div>
-                    </div>
-                    <textarea class="textBox" id="mensajeDesencriptado" name="mensaje" rows="10" cols="30" placeholder="...A ENCRIPTAR"> </textarea>            
-                </div>
-                
-                
-                <div class="advertencia__area"> <!-- mensaje de avdertencia -->
-                    <img src="assets/Icon_Alert.png" alt="Icono de advertencia" class="advertencia__icono">
-                    <p class="advertencia__texto">Solo letras minúsculas y sin acentos</p>
-                 </div>
-             
+                    </div> 
+                    <div class="textBox">
+                        <textarea id="mensajeDesencriptado" name="mensaje" rows="10" cols="30" placeholder="...A ENCRIPTAR"> </textarea>            
+                        <div class="advertencia__area"> <!-- mensaje de avdertencia -->
+                            <img src="assets/Icon_Alert.png" alt="Icono de advertencia" class="advertencia__icono">
+                            <p class="advertencia__texto">Solo letras minúsculas y sin acentos</p>
+                        </div>
+                    </div> 
+                </div>             
                 
                 <div class="buttons__area"> <!-- area de botones -->
-                    <button class="buttons__encriptar" type="button" onclick="encriptar()" id="encriptar">Encriptar</button>
-                    <button class="buttons__copiar__encriptado" type="button"  onclick="copiarTextoDesencriptado()" id="copiar">Copiar</button>  
+                    <button class="btn__encriptar" type="button" onclick="encriptar()" id="encriptar">Encriptar</button>
+                    <button class="btn__copiar__encriptado" type="button"  onclick="copiarTextoDesencriptado()" id="copiar">Copiar</button>  
                 </div>
-            </div>
+            </section>
             
-            <div class="button__swap__area">
-                <button class="button__swap" type="button" onclick="swap()" id="swap"><img src="assets/Swap.png" class="swap__img" alt="Imagen de intercambio entre campos de texto"></button>
-            </div>
-            
-            <div class="container"> <!-- PARTE DERECHA CON RESULTADO -->
+            <section class="button__swap__area">
+                <button class="btn__swap" type="button" onclick="swap()" id="swap"><img src="assets/Swap.png" class="swap__img" alt="Imagen de intercambio entre campos de texto"></button>
+            </section>
+          
+            <section class="container"> <!-- PARTE DERECHA CON RESULTADO -->
                 <div class="textBox__area"> <!-- area para el ingreso del texto a encriptar -->      
                     <div class="textBox__label">
                         <h2 class="textBox__label__text">INGRESE EL TEXTO...</h2>
                         <div class="textBox__label__icon">
                             <img src="assets/IconArrowDown.png" alt="Icono flecha abajo" class="icon__arrowDown">
                         </div>
-                    </div>
-                    <textarea class="textBox" id="mensajeEncriptado" name="resultado" rows="10" cols="30" placeholder="...A DESENCRIPTAR"> </textarea>
+                    </div> 
+                                        
+                    <div class="textBox">
+                        <textarea id="mensajeEncriptado" name="resultado" rows="10" cols="30" placeholder="...A DESENCRIPTAR"> </textarea>
+                        <div class="advertencia__area"> <!-- mensaje de avdertencia -->
+                            <img src="assets/Icon_Alert.png" alt="Icono de advertencia" class="advertencia__icono">
+                            <p class="advertencia__texto">Solo letras minúsculas y sin acentos</p>
+                        </div>
+                    </div> 
                 </div>
-
-                <!-- mensaje de avdertencia -->
-                <div class="advertencia__area">
-                    <img src="assets/Icon_Alert.png" alt="Icono de advertencia" class="advertencia__icono">
-                    <p class="advertencia__texto">Solo letras minúsculas y sin acentos</p>
-                </div>
-                   
+                                   
                 <!-- area de botones-->
                 <div class="buttons__area">
-                    <button class="buttons__desencriptar" type="button"  onclick="desencriptar()" id="desencriptar">Desencriptar</button>    
-                    <button class="buttons__copiar__desencriptado" type="button"  onclick="copiarTextoEncriptado()" id="copiar">Copiar</button>        
+                    <button class="btn__desencriptar" type="button"  onclick="desencriptar()" id="desencriptar">Desencriptar</button>    
+                    <button class="btn__copiar__desencriptado" type="button"  onclick="copiarTextoEncriptado()" id="copiar">Copiar</button>        
                 </div>                  
-            </div>
+            </section>
         </main>
     </body>
 
@@ -77,8 +76,8 @@
         <p class="footer__text">Desarrollado por Vanina Denegri para Alura Latam | 2024</p>
                
         <div class="footer__link__area">
-            <a class="footer__link" href="https://www.linkedin.com/in/vaninadenegri/"> <img src="./assets/SocialLinkedin.png" class="footer__link__icon"> </a>
-            <a class="footer__link" href="https://github.com/VannDennOk"> <img src="./assets/SocialGithub.png" class="footer__link__icon"></a>
+            <a href="https://www.linkedin.com/in/vaninadenegri/"> <img src="./assets/SocialLinkedin.png" class="icon__linkedin"> </a>
+            <a href="https://github.com/VannDennOk"> <img src="./assets/SocialGithub.png" class="icon__github"></a>
         </div>        
     </footer>
    

@@ -16,6 +16,7 @@ font-size: 16px = 1rem
     --Green: #01b352;
     --GreenLight: #02ff75;
     --Pink: #ff5e5e;
+    --PinkDark: #CC4B4B;
     --PinkLight: #ff9e9e;
     --Blue:  #45c1d3;
     --BlueLight: #8edae6;
@@ -43,68 +44,76 @@ body{
     background-color: var(--Black);
 }
 
-.header{
-    height: 13.28%;
+header{
     width: 100%;
+    height: 13.28vh;
     display: flex;
     flex-direction: row;
     justify-content: left;
     align-items: center;
+    background: url(/assets/Puntos.png) right no-repeat;
+    background-size: contain;
     background-color: var(--Orange);
-    padding-left: 4.38%;
+    padding-left: 4.44%;
     border-top: 4px solid var(--Black);
     border-left: 4px solid var(--Black);
     border-right: 4px solid var(--Black);
     border-bottom: 2px solid var(--Black);
+    .headline{
+        font-family: var(--font-Headline-Righteous);
+        font-size: 3.5rem;
+        font-weight: 400;
+        color: var(--Black);
+        justify-content: left;
+    }
 }
 
-.headline{
-    font-family: var(--font-Headline-Righteous);
-    font-size: 3rem;
-    font-weight: 400;
-    color: var(--Black);
-    justify-content: left;
-}
-
-.main{
+main{
     width: 100%;
-    height: 73.44%;
+    height: 86.72vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 4.38%;
+    justify-content:center;
+    gap: 4.44%;
     align-items: flex-start;
-    padding-left: 4.38%;
-    padding-right: 4.38%;
-    background-color: var(--Green);
+    padding-left: 6.44%;
+    padding-right: 6.44%;
     border-top: 2px solid var(--Black);
     border-left: 4px solid var(--Black);
     border-right: 4px solid var(--Black);
+    background: url(/assets/Muñeco.png) center no-repeat scroll, url(/assets/Estrellas.png) center no-repeat scroll;
+    background-color: var(--Green);
+    background-size: contain, cover;
 }
 
 .button__swap__area{
-    padding-top: 10%;
+    width: 7.78%;
+    height: 100%;
+    padding-top: 8%;
+    padding-right: 8px;
+    
+    .btn__swap{
+        width: 6rem;
+        height: 6rem;
+        background-color: var(--Yellow);
+        border: 2px solid var(--Black);
+        box-shadow: 4px 8px 0px var(--Black);
+        padding: 0.75rem;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        .swap__img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 95%;
+        }
+    }
+    .btn__swap:hover{
+        background-color: var(--GreenLight);
+        border: 4px solid var(--Black);
+        box-shadow: 0px 0px 0px var(--Black);
+    }
 }
-
-.button__swap{
-    width: 112px;
-    height: 112px;
-    background-color: var(--Yellow);
-    border: 2px solid var(--Black);
-    box-shadow: 4px 8px 0px var(--Black);
-    padding: 16px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-.swap__img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 95%;
-}
-
-
 
 /*organiza elementos izquierda-derecha*/
 .container{
@@ -112,34 +121,30 @@ body{
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 16px;
-    padding: 40px 0px;
+    justify-content: center;
+    gap: 3%;
+    padding: 4% 0;
     align-items: center;
-}
-
+    
     .textBox__area{
         width: 100%;
-        height: 73.40%;
+        height: 90%;
         display: flex;
         flex-direction: column;
         justify-content: left;
-    }
-
         .textBox__label{
             width: 100%;
-            height: 20.14%;
+            height: 8.5%;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            padding-left: 1%;
             background-color: var(--Violet);
             border-top: 2px solid var(--Black);
             border-left: 2px solid var(--Black);
             border-right: 2px solid var(--Black);
             border-bottom: 1px solid var(--Black);
-        }
-
             .textBox__label__text{
                 font-family: var(--font-Label-LexendMega);
                 font-size: 1rem;
@@ -147,9 +152,8 @@ body{
                 color: var(--Black);
                 justify-content: left;
             }
-
             .textBox__label__icon{
-                width: 10.54%;
+                width: 10.45%;
                 height: 100%;
                 background-color: var(--VioletDark);
                 border-left: 2px solid var(--Black);
@@ -157,149 +161,117 @@ body{
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-            }
-
                 .icon__arrowDown{
-                    width: 50%;
                     height: 50%;
                 }
-
+            }
+        }
         .textBox{ /*recuadro para ingresar el texto a encriptar o desencriptar*/
             width: 100%;
-            height: 79.86%;
-            text-align: left;
-            resize: none;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 16px;
+            align-items: center;
             background-color: var(--White);
             border-top: 1px solid var(--Black);
             border-left: 2px solid var(--Black);
             border-right: 2px solid var(--Black);
-            border-bottom: 2px solid var(--Black);    
-            padding: 24px;
-        }
-          
+            border-bottom: 2px solid var(--Black);
+            padding: 16px;
             textarea{ /*como se va a ver el texto escrito*/
-                color: var(--Black);
+                width: 100%;
+                height: 90%;
+                background-color: var(--White);
+                color: var(--PinkDark);
                 font-family: var(--font-Body-OpenSans);
                 font-size: 1.5rem;
                 font-weight: 400;
+                text-align: left;
                 border: none;
                 outline: transparent;
                 line-height: 150%;
+                resize: none;
+                textarea:focus{
+                    outline: none;
+                }
             }
-
-            ::placeholder{ /*mensaje que ahí debe escribirse*/
-                color: var(--Black);
-                font-family: var(--font-Label-LexendMega);
-                font-size: 1rem;
-                font-weight: 400;
+            .advertencia__area{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: left;
+                gap: 16px;
+                .advertencia__icono{
+                    height: 1rem;
+                }
+                .advertencia__texto{
+                    font-family: var(--font-Body-OpenSans);
+                    font-size: 1rem;
+                    font-weight: 400;
+                    color: var(--Black);
+                }
+            }
         }
+        
+          
+        ::placeholder{ /*mensaje que ahí debe escribirse*/
+            color: var(--Black);
+            font-family: var(--font-Label-LexendMega);
+            font-size: 1rem;
+            font-weight: 600;
+        }    
+    }
 
-/*mensaje de adevrtencia - definición del espacio que ocupa*/
-.advertencia__area{
-    width: 100%;
-    height: 24px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: left;
-    gap: 16px;
-    padding-left: 4px;
+    .buttons__area{
+        height: 4rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        align-items: center;
+        .btn__encriptar, 
+        .btn__copiar__encriptado,
+        .btn__desencriptar,
+        .btn__copiar__desencriptado {
+            width: 50%;
+            height: 3.5rem;
+            font-family: var(--font-Label-LexendMega);
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--Black);
+            border: 2px solid var(--Black);
+            box-shadow: 4px 8px 0px var(--Black);
+            padding: 8px 24px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        .btn__encriptar{
+            background-color: var(--Pink);
+        }
+        .btn__copiar__encriptado{
+            background-color: var(--PinkLight);
+        }
+        .btn__desencriptar{
+            background-color: var(--Blue);
+        }
+        .btn__copiar__desencriptado{
+            background-color: var(--BlueLight);
+        }
+        .btn__encriptar:hover, 
+        .btn__copiar__encriptado:hover, 
+        .btn__desencriptar:hover, 
+        .btn__copiar__desencriptado:hover{
+            background-color: var(--GreenLight);
+            border: 4px solid var(--Black);
+            box-shadow: 0px 0px 0px var(--Black);
+        }
+    }
 }
 
-/*mensaje de adevrtencia - formato del ícono*/
-.advertencia__icono{
-    width: 24px;
-    height: 24px;
-}
-
-/*mensaje de adevrtencia - formato del texto*/
-.advertencia__texto{
-    font-family: var(--font-Body-OpenSans);
-    font-size: 0.75rem;
-    font-weight: 400;
-    color: var(--Black);
-}
-
-/*botones - definición del espacio que ocupan*/
-.buttons__area{
-    height: 64px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-    align-items: center;
-}
-
-/*botones - formato*/
-.buttons__encriptar{
-    width: 50%;
-    height: 56px;
-    font-family: var(--font-Label-LexendMega);
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--Black);
-    background-color: var(--Pink);
-    border: 2px solid var(--Black);
-    box-shadow: 4px 8px 0px var(--Black);
-    padding: 8px 24px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-.buttons__copiar__encriptado{
-    width: 50%;
-    height: 56px;
-    font-family: var(--font-Label-LexendMega);
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--Black);
-    background-color: var(--PinkLight);
-    border: 2px solid var(--Black);
-    box-shadow: 4px 8px 0px var(--Black);
-    padding: 8px 24px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-.buttons__desencriptar{
-    width: 50%;
-    height: 56px;
-    font-family: var(--font-Label-LexendMega);
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--Black);
-    background-color: var(--Blue);
-    border: 2px solid var(--Black);
-    box-shadow: 4px 8px 0px var(--Black);
-    padding: 8px 24px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-.buttons__copiar__desencriptado{
-    width: 50%;
-    height: 56px;
-    font-family: var(--font-Label-LexendMega);
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--Black);
-    background-color: var(--BlueLight);
-    border: 2px solid var(--Black);
-    box-shadow: 4px 8px 0px var(--Black);
-    padding: 8px 24px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-.buttons__encriptar:hover, .buttons__copiar__encriptado:hover, .buttons__desencriptar:hover, .buttons__copiar__desencriptado:hover, .button__swap:hover, .popup__button:hover{
-    background-color: var(--GreenLight);
-    border: 4px solid var(--Black);
-    box-shadow: 0px 0px 0px var(--Black);
-}
-
-/*FOOTER*/
 .footer{
-    height: 13.28%;
     width: 100%;
     background-color: var(--Black);
     display: flex;
@@ -308,28 +280,21 @@ body{
     justify-content: space-between;
     text-align: right;
     padding: 20px 20px 20px 20px;
+    .footer__text{
+        font-family: var(--font-Body-OpenSans);
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: var(--White);
+    }
+    .footer__link__area{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+    }
 }
 
-.footer__text{
-    font-family: var(--font-Body-OpenSans);
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: var(--White);
-}
-
-.footer__link__area{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    height: 24px;
-}
-
-.footer__link__icon{
-    width: 36px;
-
-}
 
 /*FORMATO DE LOS POPUP o MENSAJES*/
 .popup__texto{
@@ -364,6 +329,12 @@ body{
     align-items: center;
     cursor: pointer;
     transition: 0.4s;
+}
+
+.popup__button:hover{
+    background-color: var(--GreenLight);
+    border: 4px solid var(--Black);
+    box-shadow: 0px 0px 0px var(--Black);
 }
 
 .popup__closeButton{
