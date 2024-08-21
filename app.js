@@ -48,7 +48,7 @@ function desencriptar(){
       }
   }
 
-  // FUNCIÓN PARA CAMBIAR DATOS ENTRE CAMPOS
+// FUNCIÓN PARA CAMBIAR DATOS ENTRE CAMPOS
 function swap(){
   let textoDerecha = document.getElementById("mensajeEncriptado").value;
   let textoIzquierda = document.getElementById("mensajeDesencriptado").value;
@@ -83,6 +83,15 @@ function copiarTextoEncriptado(){
       mensajeCampoVacioCopiar();
   }
 }
+
+function cleanMensajeDesencriptado(){
+  document.getElementById("mensajeDesencriptado").value = "";
+}
+
+function cleanMensajeEncriptado(){
+  document.getElementById("mensajeEncriptado").value = "";
+}
+
 
 // MENSAJES POPUP
 // Ahora son funcionales pero faltaría revisar cómo acortar el código.

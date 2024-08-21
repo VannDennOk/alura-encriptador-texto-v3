@@ -27,9 +27,12 @@
                     </div> 
                     <div class="textBox">
                         <textarea id="mensajeDesencriptado" name="mensaje" rows="10" cols="30" placeholder="...A ENCRIPTAR"> </textarea>            
-                        <div class="advertencia__area"> <!-- mensaje de avdertencia -->
-                            <img src="assets/Icon_Alert.png" alt="Icono de advertencia" class="advertencia__icono">
-                            <p class="advertencia__texto">Solo letras minúsculas y sin acentos</p>
+                        <div class="textarea__footer">
+                            <div class="advertencia__area"> <!-- mensaje de avdertencia -->
+                                <img src="assets/Icon_Alert.png" alt="Icono de advertencia" class="advertencia__icono">
+                                <p class="advertencia__texto">Solo letras minúsculas y sin acentos</p>
+                            </div>
+                            <button class="btn__trash" type="button" onclick="cleanMensajeDesencriptado()" id="btn__trash"><img class="trash__icon" src="/assets/Trash.png" alt="basura"></button>
                         </div>
                     </div> 
                 </div>             
@@ -55,9 +58,12 @@
                                         
                     <div class="textBox">
                         <textarea id="mensajeEncriptado" name="resultado" rows="10" cols="30" placeholder="...A DESENCRIPTAR"> </textarea>
-                        <div class="advertencia__area"> <!-- mensaje de avdertencia -->
-                            <img src="assets/Icon_Alert.png" alt="Icono de advertencia" class="advertencia__icono">
-                            <p class="advertencia__texto">Solo letras minúsculas y sin acentos</p>
+                        <div class="textarea__footer">
+                            <div class="advertencia__area"> <!-- mensaje de avdertencia -->
+                                <img src="assets/Icon_Alert.png" alt="Icono de advertencia" class="advertencia__icono">
+                                <p class="advertencia__texto">Solo letras minúsculas y sin acentos</p>
+                            </div>
+                            <button class="btn__trash" type="button" onclick="cleanMensajeEncriptado()" id="btn__trash"><img class="trash__icon" src="/assets/Trash.png" alt="basura"></button>
                         </div>
                     </div> 
                 </div>
