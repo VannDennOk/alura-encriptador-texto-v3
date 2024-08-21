@@ -82,7 +82,7 @@ main{
     border-top: 2px solid var(--Black);
     border-left: 4px solid var(--Black);
     border-right: 4px solid var(--Black);
-    background: url(assets/Muñeco.png) center no-repeat scroll, url(/assets/Estrellas.png) center no-repeat scroll;
+    background: url('/assets/Muñeco.png') center no-repeat scroll, url(/assets/Estrellas.png) center no-repeat scroll;
     background-color: var(--Green);
     background-size: contain, cover;
 }
