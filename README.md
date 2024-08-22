@@ -22,7 +22,7 @@
 <br> VERSIÓN 3:
 <br>a. Se propone un nuevo diseño basado en la tendencia neo-brutalism, se mantuvo la distribución de los elementos de la versión 2 y las funcionalidades principales de encriptar/desencriptar/copiar mensaje.
 <br>b. Se agregó un switch para modo claro / modo oscuro.
-<br>c. Se agregó un botón para limpiar las cajas cajas.
+<br>c. Se agregó un botón para limpiar las cajas.
 </p>
 
 <h3>Funcionalidad :wrench:</h3>
