@@ -76,8 +76,8 @@
     &#9670;
     <a href="https://vanndennok.github.io/alura-encriptador-texto-v2"><img alt="Static Badge" src="https://img.shields.io/badge/GitHub_Page_v2-indigo"></a>
     &#9670;
-</p>
-
+<br>
+<br>  
     Versión v.3 (personalizada):
 <br>
 <br>  
