@@ -26,7 +26,7 @@ La encriptación funciona de ida y vuelta usando las claves:<br>
 
 <h3>Requisitos :clipboard:</h3>
 <p>
-:heavy_check_mark: Debe funcionar solo con letras minúsculas
+:heavy_check_mark: Debe funcionar solo con letras minúsculas.
 <br>:heavy_check_mark: No deben ser utilizados letras con acentos ni caracteres especiales.
 <br>:heavy_check_mark: La página debe tener campos para la inserción del texto que será encriptado o desencriptado.
 <br>:heavy_check_mark: El usuario debe poder escoger entre las dos opciones: encriptar o desencriptar.
