@@ -1,6 +1,6 @@
 
 
-<p align="center"><img src="./assets/Portada-V1 (small).png" alt="vista del encriptador" width="1000"></p>
+<p align="center"><img src="./assets/Portada-V3 (small).png" alt="vista del encriptador" width="1000"></p>
 
 
 <h1>ENCRIPTADOR DE TEXTO V.3 :mag:</h1>
