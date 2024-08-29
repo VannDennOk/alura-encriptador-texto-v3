@@ -359,7 +359,7 @@ footer{
 .popup__box{
     background-color: var(--White);
     width: 50%;
-    padding: 24px;
+    padding: 3%;
     border-radius: 0px;
     box-shadow: 4px 8px 0px var(--Black);
 }
@@ -457,6 +457,11 @@ footer{
         gap: 16px;
         padding: 2%;
     }
+    
+    .popup__box{
+        width: 80%;
+        padding: 2% 2% 8%;
+    }
 }
 
 
@@ -488,5 +493,8 @@ footer{
     .btn__copiar__desencriptado {
         width: 100%;
         height: 3rem;
+    }
+    .popup__button{
+        width: 100%;
     }
 }
